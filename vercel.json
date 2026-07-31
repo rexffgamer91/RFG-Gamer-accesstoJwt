@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "jwt.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "jwt.py"
+    }
+  ]
+}
